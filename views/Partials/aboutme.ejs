@@ -1,0 +1,34 @@
+<!--Hashir Khan-->
+<!--100911091-->
+<!--Assignment 2-->
+<!--aboutme.ejs-->
+
+<!--if statement using javascript to determine if the about me page is selected-->
+<% if (title == 'About Me') { %>
+    <!--style using bootstrap to give black borders on each side-->
+    <div style="margin:50px; background-color: black;">
+        <!--container that makes the main page part white-->
+        <div class="container bg-white p-4">
+            <!--shows the title of the page-->
+            <h1><%= title %></h1>
+            <!--description about myself-->
+            <p>My name is Hashir and I am a student at Ontario Tech University. The program I am currently enrolled in is "Information Technology Security and Networking". My hobbies include Sports, Gaming and Socializing.</p>
+            <div class="row">
+                <!--centers content-->
+                <div class="col-md-6 text-center">
+                    <!--image for the about me page-->
+                    <img src="/Assets_Images/aboutme.JPG" alt="welcome image" class="img-fluid" style="height: 200px;" />
+                </div>
+                <!--centers content-->
+                <div class="col-md-6 text-center">
+                    <!--the video for the about me page-->
+                    <video id="myvid" width="auto;" height="200px;" controls poster="/Assets_Images/image2.jpg">
+                        <source src="/Assets_Images/video.mp4" type="video/mp4">
+                    </video>
+                    <!--video caption-->
+                    <p>Here's a video about networking!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<% } %>

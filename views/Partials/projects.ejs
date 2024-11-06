@@ -1,0 +1,43 @@
+<!--Hashir Khan-->
+<!--100911091-->
+<!--Assignment 2-->
+<!--projects.ejs-->
+
+<!--if statement using javascript to determine if the project page is selected-->
+<% if (title == 'Projects') { %>
+    <!--style using bootstrap to give black borders on each side-->
+    <div style="margin:50px; background-color: black;">
+        <!--container that makes the main page part white-->
+        <div class="container bg-white p-4">
+            <!--shows the title of the page-->
+            <h1><%= title %></h1>
+            <!--makes a top margin-->
+            <div class="container mt-4">
+                <!--makes a bottom margin and alligns the items-->
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 text-center">
+                        <!--image for project 1-->
+                        <img src="/Assets_Images/project1.jpg" width="150" height="150" alt="image for project 1">
+                    </div>
+                    <div class="col-md-10">
+                        <!--description for project 1-->
+                        <h5>Collaborative Leadership Presentation</h5>
+                        <p>This was a group presentation done by me and a few friends and was presented to the class!</p>
+                    </div>
+                </div>
+                <!--makes a bottom margin and alligns the items-->
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 text-center">
+                        <!--image for project 2-->
+                        <img src="/Assets_Images/project2.jpeg" width="150" height="150" alt="image for project 2">
+                    </div>
+                    <div class="col-md-10">
+                        <!--description for project 2-->
+                        <h5>Computer Architecture Research Report</h5>
+                        <p>This was a Research Report about a Cell Processor written by me!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% } %>
