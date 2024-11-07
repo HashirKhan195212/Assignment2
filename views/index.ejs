@@ -6,6 +6,16 @@
 <!--calling other ejs files in the index.ejs-->
 <% include Partials/header.ejs %>
 <% include Partials/main_nav.ejs %>
+<% if (title == 'Home') { %>
+    <div style="margin:50px; background-color: black;">
+        <div class="container bg-white p-4">
+            <h1><%= title %></h1>
+            <p>Welcome to my portfolio!</p>
+            <h2>Click On the any above links to discover my portfolio!</h2>
+                <img src="/Assets_Images/welcome.JPG" alt="welcome image" class="img-fluid" style="height: 200px;"/>
+        </div>
+    </div>
+<% } %>
 <% include Partials/home.ejs %>
 <% include Partials/aboutme.ejs %>
 <% include Partials/projects.ejs %>
